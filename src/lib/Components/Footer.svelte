@@ -1,0 +1,15 @@
+<footer class="bg-white">
+	<div class="mx-auto max-w-7xl px-6 py-10 md:flex md:items-center md:justify-between lg:px-8">
+		<div class="flex items-center">
+			<img
+				class=" mr-2 h-14 w-14 rounded-full"
+				src="/images/adrian-dunham-hs.jpeg"
+				alt="Adrian Dunham"
+			/>
+			<h2 class="flex flex-col">
+				<span class="text-xs text-gray-700"> Created By </span>
+				<span class="text-bold">Adrian Dunham</span>
+			</h2>
+		</div>
+	</div>
+</footer>

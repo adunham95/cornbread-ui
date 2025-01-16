@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Sidebar from '$lib/Components/Sidebar.svelte';
+	import Footer from '$lib/Components/Footer.svelte';
 	import { version } from '$app/environment';
 	import '../app.css';
 	let { children } = $props();
@@ -11,7 +12,12 @@
 			id: 'components',
 			links: [{ name: 'Address', href: '/' }]
 		},
-		{ name: 'RoadMap', href: '/' }
+		{
+			name: 'Style Classes',
+			id: 'style-class',
+			links: [{ name: 'Button', href: '/' }]
+		},
+		{ name: 'RoadMap', href: '/roadmap' }
 	];
 
 	let mobileNavOpen = $state(false);
@@ -54,7 +60,10 @@
 				<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
 					<div class="flex h-16 shrink-0 items-center">
 						<div>
-							<p>Cornbread UI</p>
+							<div class="flex items-center">
+								<img class="h-10 w-10" src="/logo.svg" alt="Cornbread Logo" />
+								<p>Cornbread UI</p>
+							</div>
 							<p class="pt-1 text-xs">Version {version}</p>
 						</div>
 					</div>
@@ -72,7 +81,10 @@
 		<div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
 			<div class="flex h-16 shrink-0 items-center">
 				<div>
-					<p>Cornbread UI</p>
+					<div class="flex items-center">
+						<img class="h-10 w-10" src="/logo.svg" alt="Cornbread Logo" />
+						<p>Cornbread UI</p>
+					</div>
 					<p class="pt-1 text-xs">Version {version}</p>
 				</div>
 			</div>
@@ -110,10 +122,11 @@
 		<div class="flex-1 text-sm/6 font-semibold text-gray-900">Cornbread UI</div>
 	</div>
 
-	<main class="py-10 lg:pl-72">
-		<div class="px-4 sm:px-6 lg:px-8">
+	<main class="lg:pl-72">
+		<div class="min-h-[calc(100vh-136px)] px-4 py-10 sm:px-6 lg:px-8">
 			<!-- Your content -->
 			{@render children()}
 		</div>
+		<Footer />
 	</main>
 </div>
