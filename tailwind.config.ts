@@ -11,6 +11,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				custom: {
+					surface: 'rgb(var(--surface) / <alpha-value>)',
+					surfaceBackground: 'rgb(var(--surface-background) / <alpha-value>)'
+				},
 				development: {
 					'50': '#edffe6',
 					'100': '#c4ffb2',
