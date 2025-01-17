@@ -1,0 +1,5 @@
+:root,
+html,
+body {
+	@apply bg-surface-background;
+}
