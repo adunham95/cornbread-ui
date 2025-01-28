@@ -1,12 +1,13 @@
 <script lang="ts">
-	import { roadMapItems } from '$lib/data/roadmapitems';
+	import { roadMapItems } from '../data/roadMapItems.js';
+	import type { RoadMapItemType } from '../data/roadMapItems.js';
 
 	const inProgressItems = roadMapItems.filter((rm) => rm.status === 'In Progress');
 	const plannedItems = roadMapItems.filter((rm) => rm.status === 'Planned');
 </script>
 
-{#snippet roadMapCard(roadMapItem)}
-	<div class=" bg-white">
+{#snippet roadMapCard(roadMapItem: RoadMapItemType)}
+	<div class=" ">
 		<h3 class="font-medium">{roadMapItem.name}</h3>
 		<p>{roadMapItem.description}</p>
 	</div>

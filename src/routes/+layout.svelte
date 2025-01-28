@@ -10,7 +10,7 @@
 		{
 			name: 'Components',
 			id: 'components',
-			links: [{ name: 'Button', href: '/' }]
+			links: [{ name: 'Button', href: '/components/btn' }]
 		},
 		{
 			name: 'Theme Generator',

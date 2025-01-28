@@ -1,4 +1,12 @@
-export const roadMapItems = [
+export interface RoadMapItemType {
+	slug: string;
+	name: string;
+	description: string;
+	tags: string[];
+	status: 'Planned' | 'In Progress' | 'Done';
+}
+
+export const roadMapItems: RoadMapItemType[] = [
 	{
 		slug: 'btn',
 		name: 'Button Class Component',
