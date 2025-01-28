@@ -1,6 +1,17 @@
 {
 	"name": "cornbread-ui",
 	"version": "1.0.0-alpha.1",
+	"homepage": "https://ui.cornbreadsystems.com/",
+	"license": "MIT",
+	"description": "CornbreadUI - Tailwind CSS Components",
+	"author": "Adrian Dunham",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adunham95/cornbread-ui.git"
+	},
+	"bugs": {
+		"url": "https://github.com/adunham95/cornbread-ui/issues"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -66,7 +77,5 @@
 		"components",
 		"ui-library",
 		"theming"
-	],
-	"homepage": "https://adunham95.github.io/cornbread-ui/",
-	"license": "MIT"
+	]
 }
