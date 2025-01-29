@@ -1,8 +1,8 @@
 <script lang="ts">
-	let { color = $bindable(), id } = $props();
+	let { color = $bindable(), id, label = 'Select A color' } = $props();
 </script>
 
-<label for={id}>Select A color</label>
+<label for={id}>{label}</label>
 <input
 	{id}
 	type="color"

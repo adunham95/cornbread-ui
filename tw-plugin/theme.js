@@ -2,19 +2,19 @@ module.exports = {
 	surface: {
 		background: '#fbfbfb',
 		DEFAULT: '#fafafa',
-		1: '#e4e4e7',
-		2: '#a1a1aa',
-		3: '#52525b'
+		1: '#f2f2f2',
+		2: '#bfbfbf',
+		3: '#999999'
 	},
-	success: { light: `#e6f2ee`, DEFAULT: `#428959`, dark: `#428959` },
-	error: { light: `#faf1e6`, DEFAULT: `#c73e1d`, dark: `#c73e1d` },
-	warning: { light: `#fff9e6`, DEFAULT: `#f18f01`, dark: `#f18f01` },
-	info: { light: `#e1eff7`, DEFAULT: `#2a4f87`, dark: `#2a4f87` },
+	success: { light: `#a5d1bc`, DEFAULT: `#428959`, dark: `#256637` },
+	error: { light: `#e8bb99`, DEFAULT: `#c73e1d`, dark: `#942810` },
+	warning: { light: `#fade96`, DEFAULT: `#f18f01`, dark: `#b56100` },
+	info: { light: `#95b6cf`, DEFAULT: `#2a4f87`, dark: `#173366` },
 	content: {
 		DEFAULT: '#09090b',
-		1: '#09090b',
-		2: '#27272a',
-		3: '#52525b'
+		1: '#494b54',
+		2: '#93969e',
+		3: '#babdc2'
 	},
 	brand: {
 		DEFAULT: '#7c85e3',
@@ -24,15 +24,15 @@ module.exports = {
 	},
 	accent: {
 		DEFAULT: '#8e57ad',
-		light: '#c192d4',
-		dark: '#512875',
+		light: '#d3b1de',
+		dark: '#5d3082',
 		content: '#e4e4e7'
 	},
 	disabled: {
 		DEFAULT: '#09090b',
-		1: '#f0f2f2',
-		2: '#c0c8cc',
-		3: '#6c757d',
+		1: '#93969e',
+		2: '#08080a',
+		3: '#050508',
 		content: '#09090b'
 	}
 };
