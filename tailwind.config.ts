@@ -10,6 +10,9 @@ export default {
 
 	theme: {
 		extend: {
+			fontFamily: {
+				code: ['"Source Code Pro"', 'ui-monospace']
+			},
 			colors: {
 				custom: {
 					surface: 'rgb(var(--surface) / <alpha-value>)',

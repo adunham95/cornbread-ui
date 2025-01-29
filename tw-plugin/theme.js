@@ -4,59 +4,35 @@ module.exports = {
 		DEFAULT: '#fafafa',
 		1: '#e4e4e7',
 		2: '#a1a1aa',
-		3: '#52525b',
-		4: '#27272a',
-		5: '#09090b'
+		3: '#52525b'
 	},
-	success: { background: `#e6f2ee`, DEFAULT: `#428959` },
-	error: { background: `#faf1e6`, DEFAULT: `#c73e1d` },
-	warning: { background: `#fff9e6`, DEFAULT: `#f18f01` },
-	info: { background: `#e1eff7`, DEFAULT: `42 79 135` },
+	success: { light: `#e6f2ee`, DEFAULT: `#428959`, dark: `#428959` },
+	error: { light: `#faf1e6`, DEFAULT: `#c73e1d`, dark: `#c73e1d` },
+	warning: { light: `#fff9e6`, DEFAULT: `#f18f01`, dark: `#f18f01` },
+	info: { light: `#e1eff7`, DEFAULT: `#2a4f87`, dark: `#2a4f87` },
 	content: {
 		DEFAULT: '#09090b',
 		1: '#09090b',
 		2: '#27272a',
-		3: '#52525b',
-		4: '#a1a1aa',
-		5: '#e4e4e7'
+		3: '#52525b'
 	},
 	brand: {
-		DEFAULT: '#09090b',
-		1: '#f2f7fc',
-		2: '#dce8f7',
-		3: '#c9d8f5',
-		4: '#a2b2eb',
-		5: '#7c85e3',
-		6: '#666fcc',
-		7: '#464dab',
-		8: '#2d3387',
-		9: '#1a1f66',
-		content: '#09090b'
+		DEFAULT: '#7c85e3',
+		light: '#c9d8f5',
+		dark: '#464dab',
+		content: '#e4e4e7'
 	},
 	accent: {
-		DEFAULT: '#09090b',
-		1: '#f8f0fa',
-		2: '#ead5f0',
-		3: '#dcbce6',
-		4: '#c192d4',
-		5: '#a56cc1',
-		6: '#8e57ad',
-		7: '#6e3d91',
-		8: '#512875',
-		9: '#351657',
-		content: '#09090b'
+		DEFAULT: '#8e57ad',
+		light: '#c192d4',
+		dark: '#512875',
+		content: '#e4e4e7'
 	},
 	disabled: {
 		DEFAULT: '#09090b',
 		1: '#f0f2f2',
-		2: '#d7dcde',
-		3: '#c0c8cc',
-		4: '#939da3',
-		5: '#6c757d',
-		6: '#566370',
-		7: '#3c4c5e',
-		8: '#26364a',
-		9: '#162338',
+		2: '#c0c8cc',
+		3: '#6c757d',
 		content: '#09090b'
 	}
 };

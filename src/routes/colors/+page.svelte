@@ -1,58 +1,206 @@
-<script>
-	import ColorSwatch from '$lib/Components/ColorSwatch.svelte';
+<script lang="ts">
+	const data = [
+		{
+			colorClass: 'bg-surface-background',
+			name: 'surface-background',
+			description: 'Surface Background element. Used for the page background'
+		},
+		{
+			colorClass: 'bg-surface',
+			name: 'surface',
+			description: 'Surface Elements such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-surface-1',
+			name: 'surface-1',
+			description: 'Surface Elements such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-surface-2',
+			name: 'surface-2',
+			description: 'Surface Elements such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-surface-3',
+			name: 'surface-3',
+			description: 'Surface Elements such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-success',
+			name: 'success',
+			description: 'Success text'
+		},
+		{
+			colorClass: 'bg-success-light',
+			name: 'success-light',
+			description: 'Success alert light'
+		},
+		{
+			colorClass: 'bg-success-dark',
+			name: 'success-dark',
+			description: 'Success alert dark'
+		},
+		{
+			colorClass: 'bg-error',
+			name: 'error',
+			description: 'Error text'
+		},
+		{
+			colorClass: 'bg-error-light',
+			name: 'error-light',
+			description: 'Error alert background'
+		},
+		{
+			colorClass: 'bg-error-dark',
+			name: 'error-dark',
+			description: 'Error alert background'
+		},
+		{
+			colorClass: 'bg-warning',
+			name: 'warning',
+			description: 'Warning text'
+		},
+		{
+			colorClass: 'bg-warning-light',
+			name: 'warning-light',
+			description: 'Warning alert background'
+		},
+		{
+			colorClass: 'bg-warning-dark',
+			name: 'warning-dark',
+			description: 'Warning alert background'
+		},
+		{
+			colorClass: 'bg-info',
+			name: 'info',
+			description: 'Info text'
+		},
+		{
+			colorClass: 'bg-info-light',
+			name: 'info-light',
+			description: 'Info alert background'
+		},
+		{
+			colorClass: 'bg-info-dark',
+			name: 'info-dark',
+			description: 'Info alert background'
+		},
+		{
+			colorClass: 'bg-content',
+			name: 'content',
+			description: 'Default text'
+		},
+		{
+			colorClass: 'bg-content-1',
+			name: 'content-1',
+			description: 'Content for text such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-content-2',
+			name: 'content-2',
+			description: 'Content for text such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-content-3',
+			name: 'content-3',
+			description: 'Content for text such as cards, sidebars etc'
+		},
+		{
+			colorClass: 'bg-brand',
+			name: 'brand',
+			description: 'Default brand color'
+		},
+		{
+			colorClass: 'bg-brand-light',
+			name: 'brand-light',
+			description: 'Light brand color'
+		},
+		{
+			colorClass: 'bg-brand-dark',
+			name: 'brand-dark',
+			description: 'Brand brand color'
+		},
+		{
+			colorClass: 'bg-brand-content',
+			name: 'brand-content',
+			description: 'Text for brand'
+		},
+		{
+			colorClass: 'bg-accent',
+			name: 'accent',
+			description: 'Default accent color'
+		},
+		{
+			colorClass: 'bg-accent-light',
+			name: 'accent-light',
+			description: 'Light accent color'
+		},
+		{
+			colorClass: 'bg-accent-dark',
+			name: 'accent-dark',
+			description: 'Accent brand color'
+		},
+		{
+			colorClass: 'bg-accent-content',
+			name: 'accent-content',
+			description: 'Text for accent'
+		}
+	];
 </script>
 
 <h1>Colors</h1>
 
-<div class=" space-y-2">
-	<ColorSwatch color="bg-surface" title="Surface" />
-	<ColorSwatch color="bg-surface-background" title="Surface Background" />
-	<ColorSwatch color="bg-surface-1" title="Surface 1" />
-	<ColorSwatch color="bg-surface-2" title="Surface 2" />
-	<ColorSwatch color="bg-surface-3" title="Surface 3" />
-	<ColorSwatch color="bg-surface-4" title="Surface 4" />
-	<ColorSwatch color="bg-surface-5" title="Surface 5" />
+<table class="min-w-full divide-y divide-gray-300">
+	<thead>
+		<tr>
+			<th
+				scope="col"
+				class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+			>
+				Color
+			</th>
+			<th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+				Description
+			</th>
+			<th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Example</th>
+		</tr>
+	</thead>
+	<tbody class="divide-y divide-gray-200">
+		{#each data as color}
+			{@render row(color)}
+		{/each}
+	</tbody>
+</table>
 
-	<ColorSwatch color="bg-success" title="Success" />
-	<ColorSwatch color="bg-success-background" title="Success Background" />
-
-	<ColorSwatch color="bg-error" title="Error" />
-	<ColorSwatch color="bg-error-background" title="Error Background" />
-
-	<ColorSwatch color="bg-warning" title="Warning" />
-	<ColorSwatch color="bg-warning-background" title="Warning Background" />
-
-	<ColorSwatch color="bg-info" title="Info" />
-	<ColorSwatch color="bg-info-background" title="Info Background" />
-
-	<ColorSwatch color="bg-content" title="Content" />
-	<ColorSwatch color="bg-content-1" title="Content 1" />
-	<ColorSwatch color="bg-content-2" title="Content 2" />
-	<ColorSwatch color="bg-content-3" title="Content 3" />
-	<ColorSwatch color="bg-content-4" title="Content 4" />
-	<ColorSwatch color="bg-content-5" title="Content 5" />
-
-	<ColorSwatch color="bg-brand" title="Brand" />
-	<ColorSwatch color="bg-brand-1" title="Brand 1" />
-	<ColorSwatch color="bg-brand-2" title="Brand 2" />
-	<ColorSwatch color="bg-brand-3" title="Brand 3" />
-	<ColorSwatch color="bg-brand-4" title="Brand 4" />
-	<ColorSwatch color="bg-brand-5" title="Brand 5" />
-	<ColorSwatch color="bg-brand-content" title="Brand Content" />
-
-	<ColorSwatch color="bg-accent" title="Accent" />
-	<ColorSwatch color="bg-accent-1" title="Accent 1" />
-	<ColorSwatch color="bg-accent-2" title="Accent 2" />
-	<ColorSwatch color="bg-accent-3" title="Accent 3" />
-	<ColorSwatch color="bg-accent-4" title="Accent 4" />
-	<ColorSwatch color="bg-accent-5" title="Accent 5" />
-	<ColorSwatch color="bg-accent-content" title="Accent Content" />
-
-	<ColorSwatch color="bg-disabled" title="disabled" />
-	<ColorSwatch color="bg-disabled-1" title="disabled 1" />
-	<ColorSwatch color="bg-disabled-2" title="disabled 2" />
-	<ColorSwatch color="bg-disabled-3" title="disabled 3" />
-	<ColorSwatch color="bg-disabled-4" title="disabled 4" />
-	<ColorSwatch color="bg-disabled-5" title="disabled 5" />
-	<ColorSwatch color="bg-disabled-content" title="disabled-content" />
-</div>
+{#snippet row({
+	colorClass,
+	name,
+	description
+}: {
+	colorClass: string;
+	name: string;
+	description: string;
+})}
+	<tr data-color={colorClass}>
+		<td class="whitespace-nowrap py-5 pl-4 pr-3 text-sm sm:pl-0">
+			<div class="flex items-center">
+				<div class="size-11 shrink-0">
+					<div class={`size-11 rounded-full border border-gray-200 ${colorClass}`}></div>
+				</div>
+				<div class="ml-4">
+					<div class="font-medium text-gray-900">{name}</div>
+				</div>
+			</div>
+		</td>
+		<td class="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
+			<div class="text-gray-900">{description}</div>
+		</td>
+		<td class="whitespace-nowrap px-3 py-5 text-sm text-gray-500">
+			<span
+				class="font-code inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs text-gray-700 ring-1 ring-inset ring-gray-600/20"
+			>
+				{colorClass}
+			</span>
+		</td>
+	</tr>
+{/snippet}
