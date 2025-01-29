@@ -10,12 +10,15 @@
 		{
 			name: 'Components',
 			id: 'components',
-			links: [{ name: 'Address', href: '/' }]
+			links: [{ name: 'Button', href: '/components/btn' }]
 		},
 		{
-			name: 'Style Classes',
-			id: 'style-class',
-			links: [{ name: 'Button', href: '/' }]
+			name: 'Colors',
+			href: '/colors'
+		},
+		{
+			name: 'Theme Generator',
+			href: '/theme-generator'
 		},
 		{ name: 'RoadMap', href: '/roadmap' }
 	];
@@ -57,7 +60,7 @@
 				</div>
 
 				<!-- Sidebar component, swap this element with another sidebar if you like -->
-				<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-white px-6 pb-2">
+				<div class="flex grow flex-col gap-y-5 overflow-y-auto bg-surface px-6 pb-2">
 					<div class="flex h-16 shrink-0 items-center">
 						<div>
 							<div class="flex items-center">
