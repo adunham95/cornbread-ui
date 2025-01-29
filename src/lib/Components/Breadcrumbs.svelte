@@ -1,0 +1,34 @@
+<script lang="ts">
+	interface IProps {
+		links: { title: string; path: string }[];
+	}
+
+	const { links }: IProps = $props();
+</script>
+
+<nav class="flex" aria-label="Breadcrumb">
+	<ol role="list" class="flex items-center space-x-4">
+		{#each links as link, index}
+			<li>
+				<div class="flex items-center">
+					{#if index > 0}
+						<svg
+							class="size-5 shrink-0 text-gray-300"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+							aria-hidden="true"
+						>
+							<path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+						</svg>
+					{/if}
+					<a
+						href={link.path}
+						class={`${index > 0 && 'ml-4'} text-sm font-medium text-gray-500 hover:text-gray-700`}
+					>
+						{link.title}
+					</a>
+				</div>
+			</li>
+		{/each}
+	</ol>
+</nav>

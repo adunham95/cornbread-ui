@@ -13,6 +13,10 @@
 			links: [{ name: 'Button', href: '/components/btn' }]
 		},
 		{
+			name: 'Colors',
+			href: '/colors'
+		},
+		{
 			name: 'Theme Generator',
 			href: '/theme-generator'
 		},
