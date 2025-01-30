@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	let expanded = $state('');
+	import { page } from '$app/state';
 
 	interface SidebarProps {
 		links: { name: string; href?: string; id?: string; links?: { name: string; href: string }[] }[];
@@ -25,7 +26,7 @@
 				<a
 					{onclick}
 					href={`${base}${link.href}`}
-					class="block rounded-md py-2 pl-10 pr-2 text-sm/6 font-semibold hover:bg-surface-1"
+					class={`block rounded-md py-2 pl-10 pr-2 text-sm/6 font-semibold hover:bg-surface-1 ${page.url.pathname === link.href ? 'bg-surface-1 hover:bg-surface-2' : ''} `}
 				>
 					{link.name}
 				</a>
@@ -65,7 +66,7 @@
 									<a
 										{onclick}
 										href={`${base}${sublink.href}`}
-										class="block rounded-md py-2 pl-9 pr-2 text-sm/6 hover:bg-surface-1"
+										class={`${page.url.pathname === sublink.href ? 'bg-surface-1 hover:bg-surface-2' : ''} block rounded-md py-2 pl-9 pr-2 text-sm/6 hover:bg-surface-1 `}
 									>
 										{sublink.name}
 									</a>

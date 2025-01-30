@@ -3,8 +3,8 @@ module.exports = {
 		background: '#fbfbfb',
 		DEFAULT: '#fafafa',
 		1: '#f2f2f2',
-		2: '#bfbfbf',
-		3: '#999999'
+		2: '#f0f0f0',
+		3: '#e6e6e6'
 	},
 	success: { light: `#a5d1bc`, DEFAULT: `#428959`, dark: `#256637` },
 	error: { light: `#e8bb99`, DEFAULT: `#c73e1d`, dark: `#942810` },
