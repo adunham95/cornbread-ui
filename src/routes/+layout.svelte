@@ -5,8 +5,8 @@
 	import '../app.css';
 	let { children } = $props();
 	const links = [
-		{ name: 'Install', href: '/' },
-		{ name: 'Usage', href: '/' },
+		{ name: 'Install', href: '/install' },
+		// { name: 'Usage', href: '/use' },
 		{
 			name: 'Components',
 			id: 'components',
@@ -32,7 +32,7 @@
 
 <div>
 	<div
-		class={`relative z-50 lg:hidden ${mobileNavOpen ? 'hidden' : 'block'}`}
+		class={`relative z-50 lg:hidden ${mobileNavOpen ? 'block' : 'hidden'}`}
 		role="dialog"
 		aria-modal="true"
 	>
@@ -40,7 +40,7 @@
 
 		<div class="fixed inset-0 flex">
 			<div
-				class={`relative mr-16 flex w-full max-w-xs flex-1 ${mobileNavOpen ? '-translate-x-full' : 'translate-x-0'}`}
+				class={`relative mr-16 flex w-full max-w-xs flex-1 ${mobileNavOpen ? 'translate-x-0' : '-translate-x-full'}`}
 			>
 				<div class="absolute left-full top-0 flex w-16 justify-center pt-5">
 					<button type="button" class="-m-2.5 p-2.5" onclick={toggleNav}>
@@ -71,7 +71,7 @@
 						</div>
 					</div>
 					<nav class="flex flex-1 flex-col">
-						<Sidebar {links} />
+						<Sidebar {links} onclick={toggleNav} />
 					</nav>
 				</div>
 			</div>
@@ -81,7 +81,9 @@
 	<!-- Static sidebar for desktop -->
 	<div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
 		<!-- Sidebar component, swap this element with another sidebar if you like -->
-		<div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
+		<div
+			class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-surface-2 bg-surface px-6"
+		>
 			<div class="flex h-16 shrink-0 items-center">
 				<div>
 					<div class="flex items-center">
@@ -98,13 +100,9 @@
 	</div>
 
 	<div
-		class="sticky top-0 z-40 flex items-center gap-x-6 bg-white px-4 py-4 shadow-sm sm:px-6 lg:hidden"
+		class="sticky top-0 z-40 flex items-center gap-x-6 bg-surface px-4 py-4 shadow-sm shadow-surface-3 sm:px-6 lg:hidden"
 	>
-		<button
-			type="button"
-			class="-m-2.5 cursor-pointer p-2.5 text-gray-700 lg:hidden"
-			onclick={toggleNav}
-		>
+		<button type="button" class="-m-2.5 cursor-pointer p-2.5 lg:hidden" onclick={toggleNav}>
 			<span class="sr-only">Open sidebar</span>
 			<svg
 				class="size-6"
@@ -122,7 +120,7 @@
 				></path>
 			</svg>
 		</button>
-		<div class="flex-1 text-sm/6 font-semibold text-gray-900">Cornbread UI</div>
+		<div class="flex-1 text-sm/6 font-semibold">Cornbread UI</div>
 	</div>
 
 	<main class="lg:pl-72">

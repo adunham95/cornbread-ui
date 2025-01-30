@@ -13,7 +13,7 @@
 				<div class="flex items-center">
 					{#if index > 0}
 						<svg
-							class="size-5 shrink-0 text-gray-300"
+							class="size-5 shrink-0 text-content-2"
 							fill="currentColor"
 							viewBox="0 0 20 20"
 							aria-hidden="true"
@@ -23,7 +23,7 @@
 					{/if}
 					<a
 						href={link.path}
-						class={`${index > 0 && 'ml-4'} text-sm font-medium text-gray-500 hover:text-gray-700`}
+						class={`${index > 0 && 'ml-4'} text-sm font-medium text-content-2 hover:text-content-1`}
 					>
 						{link.title}
 					</a>

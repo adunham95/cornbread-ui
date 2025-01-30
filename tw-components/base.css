@@ -2,4 +2,5 @@
 html,
 body {
 	@apply bg-surface-background;
+	@apply text-content;
 }

@@ -4,9 +4,10 @@
 
 	interface SidebarProps {
 		links: { name: string; href?: string; id?: string; links?: { name: string; href: string }[] }[];
+		onclick?: () => void;
 	}
 
-	const { links }: SidebarProps = $props();
+	const { links, onclick = () => null }: SidebarProps = $props();
 
 	function toggleExpanded(name: string) {
 		if (expanded === name) {
@@ -22,8 +23,9 @@
 		{#if link.href}
 			<li>
 				<a
+					{onclick}
 					href={`${base}${link.href}`}
-					class="block rounded-md py-2 pl-10 pr-2 text-sm/6 font-semibold text-gray-700 hover:bg-gray-50"
+					class="block rounded-md py-2 pl-10 pr-2 text-sm/6 font-semibold hover:bg-surface-1"
 				>
 					{link.name}
 				</a>
@@ -34,14 +36,14 @@
 				<div>
 					<button
 						type="button"
-						class="flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold text-gray-700 hover:bg-gray-50"
+						class="flex w-full items-center gap-x-3 rounded-md p-2 text-left text-sm/6 font-semibold hover:bg-surface-1"
 						aria-controls="sub-menu-1"
 						aria-expanded="false"
 						onclick={() => toggleExpanded(link.id || '')}
 					>
 						<!-- Expanded: "rotate-90 text-gray-500", Collapsed: "text-gray-400" -->
 						<svg
-							class={`size-5 shrink-0 ${link.id === expanded ? 'rotate-90 text-gray-500' : 'text-gray-400'}`}
+							class={`size-5 shrink-0 ${link.id === expanded ? 'rotate-90 text-content' : 'text-content-1'}`}
 							viewBox="0 0 20 20"
 							fill="currentColor"
 							aria-hidden="true"
@@ -61,8 +63,9 @@
 							{#each link.links as sublink}
 								<li>
 									<a
+										{onclick}
 										href={`${base}${sublink.href}`}
-										class="block rounded-md py-2 pl-9 pr-2 text-sm/6 text-gray-700 hover:bg-gray-50"
+										class="block rounded-md py-2 pl-9 pr-2 text-sm/6 hover:bg-surface-1"
 									>
 										{sublink.name}
 									</a>

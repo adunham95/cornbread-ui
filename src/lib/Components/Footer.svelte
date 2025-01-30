@@ -8,7 +8,7 @@
 			alt="Adrian Dunham"
 		/>
 		<h2 class="flex flex-col">
-			<span class="text-xs text-gray-700"> Created By </span>
+			<span class="text-xs text-content-2"> Created By </span>
 			<span class="text-bold">Adrian Dunham</span>
 		</h2>
 	</div>
