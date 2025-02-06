@@ -1,4 +1,4 @@
-module.exports = {
+const defaultTheme = {
 	surface: {
 		background: '#fbfbfb',
 		DEFAULT: '#fafafa',
@@ -36,3 +36,5 @@ module.exports = {
 		content: '#09090b'
 	}
 };
+
+export default defaultTheme;

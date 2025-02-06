@@ -3,7 +3,7 @@ import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
 
-import TailwindUiKitPlugin from './tw-plugin/index.cjs';
+import TailwindUiKitPlugin from './tw-plugin/index.js';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],

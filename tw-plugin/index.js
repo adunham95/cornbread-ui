@@ -1,10 +1,6 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-// Reexport your entry components here
-const plugin = require('tailwindcss/plugin');
-
-const components = require('./components.js');
-
-const themeData = require('./theme.js');
+import plugin from 'tailwindcss/plugin';
+import components from './components.js';
+import themeData from './theme.js';
 
 const TailwindUiKitPlugin = plugin.withOptions(
 	() => {
@@ -20,4 +16,4 @@ const TailwindUiKitPlugin = plugin.withOptions(
 	}
 );
 
-module.exports = TailwindUiKitPlugin;
+export default TailwindUiKitPlugin;
