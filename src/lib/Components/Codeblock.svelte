@@ -14,7 +14,7 @@
 	/>
 </svelte:head>
 
-<pre class="">
+<pre class=" overflow-x-scroll">
     <code class="language-svelte whitespace-pre-wrap">
         {@html html}
     </code>

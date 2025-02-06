@@ -59,7 +59,10 @@
 						{link.name}
 					</button>
 					<!-- Expandable link section, show/hide based on state. -->
-					<ul class={`mt-1 px-2 ${link.id === expanded ? 'block' : 'hidden'}`} id="sub-menu-1">
+					<ul
+						class={`mt-1 px-2 ${link.id === expanded ? 'block' : 'hidden'}`}
+						id="sub-menu-1 space-y-1"
+					>
 						{#if link.links}
 							{#each link.links as sublink}
 								<li>

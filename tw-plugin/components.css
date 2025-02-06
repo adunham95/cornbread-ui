@@ -84,3 +84,33 @@ body {
 		}
 	}
 }
+.tab-container {
+	@apply grid;
+	& label {
+		grid-row-start: 1;
+		@apply mb-1 mr-1 rounded-md px-3 py-2 text-sm font-medium;
+		transition: background-color 350ms;
+		cursor: pointer;
+	}
+}
+.tab {
+	@apply hidden;
+}
+label:has(+ .tab) {
+	@apply text-content-1 hover:bg-surface-2;
+}
+label:has(+ .tab:checked) {
+	@apply bg-brand-light text-brand;
+}
+.tab:checked + .tab-content {
+	display: block;
+}
+.tab + .tab-content {
+	@apply hidden;
+}
+.tab-content {
+	grid-column-start: 1;
+	grid-column-end: span 9999;
+	grid-row-start: 2;
+	max-width: calc(100vw - 4rem);
+}

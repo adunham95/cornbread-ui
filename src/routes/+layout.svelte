@@ -10,7 +10,10 @@
 		{
 			name: 'Components',
 			id: 'components',
-			links: [{ name: 'Button', href: '/components/btn' }]
+			links: [
+				{ name: 'Button', href: '/components/btn' },
+				{ name: 'Tabs', href: '/components/tabs' }
+			]
 		},
 		{
 			name: 'Colors',

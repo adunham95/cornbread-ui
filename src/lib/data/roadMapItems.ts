@@ -58,7 +58,8 @@ export const roadMapItems: RoadMapItemType[] = [
 		name: 'Tab Component',
 		description: '',
 		tags: ['Component'],
-		status: 'Planned'
+		status: 'In Progress',
+		releaseVersion: '1.0.0-alpha.3'
 	},
 	{
 		slug: 'button-v2',
@@ -94,6 +95,13 @@ export const roadMapItems: RoadMapItemType[] = [
 		slug: 'typography',
 		name: 'Typography',
 		description: 'Updating the documentation with chips ',
+		tags: [''],
+		status: 'Planned'
+	},
+	{
+		slug: 'bread-crumbs',
+		name: 'Breadcrumbs',
+		description: 'Adding new component to display bread crumbs',
 		tags: [''],
 		status: 'Planned'
 	}
