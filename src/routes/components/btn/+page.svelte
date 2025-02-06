@@ -78,7 +78,7 @@
 				</div>
 			</div>
 			<label for="o-but-c">Code</label>
-			<input type="radio" id="o-but-c" name="o-but" class="tab" role="tab" checked />
+			<input type="radio" id="o-but-c" name="o-but" class="tab" role="tab" />
 			<div role="tabpanel" class="tab-content rounded-md border border-content-1 p-1">
 				<Codeblock
 					code={`
@@ -112,7 +112,7 @@
 			</div>
 
 			<label for="t-but-c">Code</label>
-			<input type="radio" id="t-but-c" name="t-but" class="tab" role="tab" checked />
+			<input type="radio" id="t-but-c" name="t-but" class="tab" role="tab" />
 			<div role="tabpanel" class="tab-content rounded-md border border-content-1 p-1">
 				<Codeblock
 					code={`
