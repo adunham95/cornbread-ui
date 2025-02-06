@@ -97,7 +97,7 @@ export function hexToRgb(hex: string) {
 	return { r, g, b };
 }
 
-export function getTextColor(color: string): '#fbfbfb' | '#181818' {
+export function getTextColor(color: string): '#ffffff' | '#181818' {
 	const rgbColor = hexToRgb(color);
 
 	if (!rgbColor) {
@@ -109,7 +109,7 @@ export function getTextColor(color: string): '#fbfbfb' | '#181818' {
 
 	console.log('luma', luma);
 
-	return luma < 55 ? '#fbfbfb' : '#181818';
+	return luma < 55 ? '#ffffff' : '#181818';
 }
 
 function lighten(hex: string, intensity: number): string {

@@ -20,13 +20,13 @@ const defaultTheme = {
 		DEFAULT: '#7c85e3',
 		light: '#c9d8f5',
 		dark: '#464dab',
-		content: '#e4e4e7'
+		content: '#ffffff'
 	},
 	accent: {
 		DEFAULT: '#8e57ad',
 		light: '#d3b1de',
 		dark: '#5d3082',
-		content: '#e4e4e7'
+		content: '#ffffff'
 	},
 	disabled: {
 		DEFAULT: '#09090b',
