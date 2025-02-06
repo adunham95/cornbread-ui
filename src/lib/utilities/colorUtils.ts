@@ -97,19 +97,19 @@ export function hexToRgb(hex: string) {
 	return { r, g, b };
 }
 
-export function getTextColor(color: string): '#FFFFFF' | '#333333' {
+export function getTextColor(color: string): '#fbfbfb' | '#181818' {
 	const rgbColor = hexToRgb(color);
 
 	if (!rgbColor) {
-		return '#333333';
+		return '#181818';
 	}
 
 	const { r, g, b } = rgbColor;
 	const luma = (0.2126 * r + 0.7152 * g + 0.0722 * b) * 100;
 
-	// console.log('luma', luma);
+	console.log('luma', luma);
 
-	return luma < 40 ? '#FFFFFF' : '#333333';
+	return luma < 55 ? '#fbfbfb' : '#181818';
 }
 
 function lighten(hex: string, intensity: number): string {
