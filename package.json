@@ -26,7 +26,7 @@
 		"build:tw-components:js": "prejss-cli tw-plugin/components.css --format es6",
 		"build:tw-comps": "yarn build:components:css && yarn build:tw-components:js"
 	},
-	"main": "tw-plugin/index.cjs",
+	"main": "tw-plugin/index.js",
 	"files": [
 		"tw-plugin",
 		"!tw-plugin/**/*.test.*",
