@@ -17,70 +17,70 @@ body {
 	}
 
 	&-primary {
-		@apply bg-brand hover:bg-brand-dark text-brand-content focus-visible:outline-brand-dark;
+		@apply bg-brand text-brand-content hover:bg-brand-dark focus-visible:outline-brand-dark;
 	}
 	&-accent {
-		@apply bg-accent hover:bg-accent-dark text-accent-content focus-visible:outline-accent-dark;
+		@apply bg-accent text-accent-content hover:bg-accent-dark focus-visible:outline-accent-dark;
 	}
 	&-success {
-		@apply hover:bg-success-dark text-success-light bg-success focus-visible:outline-success;
+		@apply bg-success text-success-light hover:bg-success-dark focus-visible:outline-success;
 	}
 	&-info {
-		@apply hover:bg-info-dark text-info-light bg-info focus-visible:outline-info;
+		@apply bg-info text-info-light hover:bg-info-dark focus-visible:outline-info;
 	}
 	&-warning {
-		@apply hover:bg-warning-dark text-warning-light bg-warning focus-visible:outline-warning;
+		@apply bg-warning text-warning-light hover:bg-warning-dark focus-visible:outline-warning;
 	}
 	&-error {
-		@apply hover:bg-error-dark text-error-light bg-error focus-visible:outline-error;
+		@apply bg-error text-error-light hover:bg-error-dark focus-visible:outline-error;
 	}
 
 	&-outline {
 		@apply border-2 bg-transparent;
 		& {
-			@apply border-surface-2 text-surface-2 hover:bg-surface-2 hover:text-surface-1;
+			@apply border-content-2 text-content-2 hover:bg-content-2 hover:text-content-3;
 		}
 		&.btn-primary {
-			@apply border-brand hover:bg-brand-dark hover:border-brand-dark text-brand hover:text-brand-content focus-visible:outline-brand;
+			@apply border-brand text-brand hover:border-brand-dark hover:bg-brand-dark hover:text-brand-content focus-visible:outline-brand;
 		}
 		&.btn-accent {
-			@apply border-accent hover:bg-accent-dark hover:border-accent-dark text-accent hover:text-accent-content focus-visible:outline-accent;
+			@apply border-accent text-accent hover:border-accent-dark hover:bg-accent-dark hover:text-accent-content focus-visible:outline-accent;
 		}
 		&.btn-success {
-			@apply hover:bg-success-dark hover:border-success-dark hover:text-success-light border-success text-success focus-visible:outline-success;
+			@apply border-success text-success hover:border-success-dark hover:bg-success-dark hover:text-success-light focus-visible:outline-success;
 		}
 		&.btn-warning {
-			@apply hover:bg-warning-dark hover:border-warning-dark hover:text-warning-light border-warning text-warning focus-visible:outline-warning;
+			@apply border-warning text-warning hover:border-warning-dark hover:bg-warning-dark hover:text-warning-light focus-visible:outline-warning;
 		}
 		&.btn-error {
-			@apply hover:bg-error-dark hover:border-error-dark hover:text-error-light border-error text-error focus-visible:outline-error;
+			@apply border-error text-error hover:border-error-dark hover:bg-error-dark hover:text-error-light focus-visible:outline-error;
 		}
 		&.btn-info {
-			@apply hover:bg-info-dark hover:border-info-dark hover:text-info-light border-info text-info focus-visible:outline-info;
+			@apply border-info text-info hover:border-info-dark hover:bg-info-dark hover:text-info-light focus-visible:outline-info;
 		}
 	}
 	&-text {
 		@apply bg-transparent shadow-none;
 		& {
-			@apply text-surface-2 hover:bg-surface-1 hover:text-surface-2;
+			@apply text-content-1 hover:bg-content-2 hover:text-content-1;
 		}
 		&.btn-primary {
-			@apply hover:bg-brand-light text-brand focus-visible:outline-brand-light;
+			@apply text-brand hover:bg-brand-light focus-visible:outline-brand-light;
 		}
 		&.btn-accent {
-			@apply hover:bg-accent-light text-accent focus-visible:outline-accent-light;
+			@apply text-accent hover:bg-accent-light focus-visible:outline-accent-light;
 		}
 		&.btn-success {
-			@apply hover:bg-success-light focus-visible:outline-success-light text-success;
+			@apply text-success hover:bg-success-light focus-visible:outline-success-light;
 		}
 		&.btn-warning {
-			@apply hover:bg-warning-light focus-visible:outline-warning-light text-warning;
+			@apply text-warning hover:bg-warning-light focus-visible:outline-warning-light;
 		}
 		&.btn-error {
-			@apply hover:bg-error-light focus-visible:outline-error-light text-error;
+			@apply text-error hover:bg-error-light focus-visible:outline-error-light;
 		}
 		&.btn-info {
-			@apply hover:bg-info-light focus-visible:outline-info-light text-info;
+			@apply text-info hover:bg-info-light focus-visible:outline-info-light;
 		}
 	}
 }
